@@ -1,0 +1,9 @@
+﻿@{ 
+
+    // /* This file will execute every time a page is requested from inside admin folder*/
+
+    if (!WebUser.IsAuthenticated)
+    {
+        Response.Redirect("~/login/");
+    }
+}
